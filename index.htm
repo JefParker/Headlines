@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Headlines</title>
+    <link rel='stylesheet' href='/Chrome/Headlines/News.css' />
+    <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="/Chrome/Headlines/News.js"></script>
+	<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
+		<link rel='apple-touch-icon-precomposed' sizes='45x45' href='/Chrome/Headlines/Images/News45.png' />
+		<link rel='apple-touch-icon-precomposed' sizes='128x128' href='/Chrome/Headlines/Images/NewsI128.png' />
+		<link rel='icon' sizes='128x128' type='image/png' href='/Chrome/Headlines/Images/NewsI128.png' />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='HandheldFriendly' content='True'>
+    <meta name='MobileOptimized' content='320'>
+    <script>google.load("feeds", "1");</script>
+</head>
+
+<body>
+    <div class='Container'>
+        <div id='Sidebar' class='CardRow' style=''>
+        	  <div id='DateCard' class='Card' style=''>
+        		</div>  <!-- Date -->
+            <div id='NewsTypes' class='Card' style='display: none;'>
+            	<a href="javascript:ShowSettings()"><img src='/Chrome/Headlines/Images/GearI24.png' align='right' style='width: 24px;'></a>
+            	  <a href="javascript:ShowMostRecent(100, 'All')">All</a> <a href="javascript:RefreshHeadlines()" id='RefreshTime'>Refresh</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'Top Headlines')">Top Headlines</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'Tech')">Tech</a>  <a href="javascript:ShowMostRecent(100, 'Android')">Android</a>  <a href="javascript:ShowMostRecent(100, 'Chrome')">Chrome</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'Business')">Business</a> <a href="javascript:ShowMostRecent(100, 'Science')">Science</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'News Magazines')">News Magazines</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'Sports')">Sports</a>  <a href="javascript:ShowMostRecent(100, 'NBA')">NBA</a>  <a href="javascript:ShowMostRecent(100, 'MLB')">MLB</a>
+                <br>
+                <a href="javascript:ShowMostRecent(100, 'Life')">Life</a> 
+								<a href="javascript:ShowMostRecent(100, 'Entertainment')">Entertainment</a>
+                <br>
+                <span id='MostRecent'></span>
+            </div>
+            <!-- Sidebar Links -->
+            
+            <div id='Settings' class='Card' style='display: none;'>
+            	<section style='text-align: center;'><b>Settings</b></section>
+            	Refresh every <select id='RefreshRate' onChange='RefreshRateChange()'>
+            		<option value='1'>1</option>
+            		<option value='2'>2</option>
+            		<option value='3'>3</option>
+            		<option value='5'>5</option>
+            		<option value='10'>10</option>
+            		<option value='60'>60</option>
+            	</select> minutes<br>
+            	<div id='CitySelector'></div>
+							<a href='http://woeid.rosselliot.co.nz/lookup' title='Other location' target='_blank'>WOEID</a>:  <input type='number' id='CityWOEID' onChange='CityWOEIDUpdate()' OnInput='CityWOEIDUpdate()' OnKeyUp='CityWOEIDUpdate()' onPaste='CityWOEIDUpdate()'/><br>
+							<span style='font-size: 80%;'>Art credits:  <a href='http://www.softicons.com/toolbar-icons/eziconic-icons-by-eray-zesen' target='_blank'>Newspaper</a>,
+							<a href='http://www.softicons.com/system-icons/hadaikum-icons-by-tiny-lab/settings-icon' target='_blank'>gear</a>,
+								<a href='http://www.softicons.com/web-icons/web-development-icons-2-by-icojoy/refresh-icon' target='_blank'>refresh</a></span>
+            </div>  <!-- Sidebar Settings -->
+            
+            <div id='SidebarWeather' class='Card' style='text-align: center; display: none;'>
+            </div>
+            <!-- Sidebar Weather -->
+        </div>
+        <!-- CardRow -->
+        <div id='NewsRow' class='CardRow'>
+            <div class='Card'><a href='javascript:ShowMostRecent(10, "All")'>Loading...</a><br>
+						<a href='javascript:ShowMostRecent(100, "All")'>
+            <p>&nbsp;</p>
+            <section id='StatusWaitSpinner' class="spinner-2" style="margin-left: auto; margin-right: auto; width: 100px; display: block;">
+						<div class="spinner"></div>
+						</section>
+            <img src='/Chrome/Headlines/Images/NewsI256.png' /></a></div>
+        </div>
+        <!-- NewsRow -->
+    </div>
+    <!-- Container -->
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+{
+  "Cities": [
+    {
+      "City": "Anchorage, AK",
+      "Code": "2354490"
+    },
+    {
+      "City": "Tucson, AZ",
+      "Code": "2508428"
+    },
+    {
+      "City": "Beverly Hills, CA",
+      "Code": "2363796"
+    },
+    {
+      "City": "Coarsegold, CA",
+      "Code": "2382298"
+    },
+    {
+      "City": "Culver City, CA",
+      "Code": "2388174"
+    },
+    {
+      "City": "Encino, CA",
+      "Code": "2399578"
+    },
+		{
+      "City": "Glendora, CA",
+      "Code": "2411141"
+    },
+    {
+      "City": "Grizzly Flats, CA",
+      "Code": "2415157"
+    },
+		{
+      "City": "Los Angeles, CA (Bowl)",
+      "Code": "24609771"
+    },
+    {
+      "City": "Los Angeles, CA (Dodgers)",
+      "Code": "91418963"
+    },
+    {
+      "City": "Malibu, CA",
+      "Code": "2444458"
+    },
+    {
+      "City": "Pasadena, CA",
+      "Code": "2468964"
+    },
+    {
+      "City": "Roseville, CA",
+      "Code": "2484861"
+    },
+    {
+      "City": "San Diego, CA",
+      "Code": "2487889"
+    },
+    {
+      "City": "San Francisco, CA",
+      "Code": "2487956"
+    },
+		{
+      "City": "Studio City, CA",
+      "Code": "2501077"
+    },
+    {
+      "City": "Van Nuys, CA",
+      "Code": "2511174"
+    },
+    {
+      "City": "West Hollywood, CA",
+      "Code": "2517213"
+    },
+    {
+      "City": "Colorado Springs, CO",
+      "Code": "2383489"
+    },
+    {
+      "City": "Denver, CO",
+      "Code": "2391279"
+    },
+    {
+      "City": "Savannah, GA",
+      "Code": "2489314"
+    },
+    {
+      "City": "Koloa, HI",
+      "Code": "2433760"
+    },
+		{
+      "City": "Kahala, HI",
+      "Code": "2430427"
+    },
+    {
+      "City": "Maui, HI",
+      "Code": "12588033"
+    },
+    {
+      "City": "Sun Valley, ID",
+      "Code": "2501907"
+    },
+    {
+      "City": "Chicago, IL",
+      "Code": "2379574"
+    },
+    {
+      "City": "New Orleans, LA",
+      "Code": "2458833"
+    },
+    {
+      "City": "Minneapolis, MN",
+      "Code": "2452078"
+    },
+    {
+      "City": "Kansas City, MO",
+      "Code": "2430683"
+    },
+    {
+      "City": "Omaha, NE",
+      "Code": "2465512"
+    },
+    {
+      "City": "Asheville, NC",
+      "Code": "2356566"
+    },
+    {
+      "City": "Albuquerque, NM",
+      "Code": "2352824"
+    },
+    {
+      "City": "New York, NY",
+      "Code": "2459115"
+    },
+    {
+      "City": "Ashland, OR",
+      "Code": "2356616"
+    },
+    {
+      "City": "Portland, OR",
+      "Code": "2475687"
+    },
+    {
+      "City": "Nashville, TN",
+      "Code": "2457170"
+    },
+    {
+      "City": "Austin, TX",
+      "Code": "12590014"
+    },
+    {
+      "City": "Dallas, TX",
+      "Code": "2388929"
+    },
+    {
+      "City": "Falls Church, VA",
+      "Code": "2402144"
+    },
+    {
+      "City": "Burlington, VT",
+      "Code": "2372071"
+    },
+    {
+      "City": "Seattle, WA",
+      "Code": "2490383"
+    },
+    {
+      "City": "Jackson Hole, WY",
+      "Code": "23511794"
+    },
+    {
+      "City": "Rio de Janeiro, BR",
+      "Code": "90200707"
+    },
+    {
+      "City": "Beijing, CN",
+      "Code": "2151330"
+    },
+    {
+      "City": "Bogota, CO",
+      "Code": "368148"
+    },
+    {
+      "City": "Berlin, DE",
+      "Code": "12596838"
+    },
+    {
+      "City": "London, GB",
+      "Code": "44418"
+    },
+    {
+      "City": "Paris, FR",
+      "Code": "615702"
+    },
+    {
+      "City": "Rome, IT",
+      "Code": "721943"
+    },
+    {
+      "City": "Tokyo, JP",
+      "Code": "1118370"
+    },
+    {
+      "City": "Nairobi Area, KE",
+      "Code": "2345940"
+    },
+    {
+      "City": "Mexico City, MX",
+      "Code": "116545"
+    },
+    {
+      "City": "Stockholm, SE",
+      "Code": "90820569"
+    },
+    {
+      "City": "Bangkok, TH",
+      "Code": "1225448"
+    }
+  ]
+}
