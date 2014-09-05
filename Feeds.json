@@ -525,6 +525,26 @@
       "URL": "http://www.inferse.com/feed/",
       "Type": "Tech, All"
     },
+    {
+      "Name": "BBC Tech",
+      "URL": "http://feeds.bbci.co.uk/news/technology/rss.xml",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Computer Weekly",
+      "URL": "http://www.computerweekly.com/rss/All-Computer-Weekly-content.xml",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "The Guardian - Tech",
+      "URL": "http://feeds.theguardian.com/theguardian/technology/rss",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "T3",
+      "URL": "http://feeds.feedburner.com/T3/news",
+      "Type": "Tech, All"
+    },
 		{
       "Name": "Freed Up Thoughts",
       "URL": "http://freedupthoughts.com/feed",
