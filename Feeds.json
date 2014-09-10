@@ -18,7 +18,8 @@
     {
       "Name": "Breaking News",
       "URL": "http://api.breakingnews.com/api/v1/item/?format=rss",
-      "Type": "Top Headlines, All"
+      "Type": "Top Headlines, All",
+			"Color": "red"
     },
     {
       "Name": "UPI News",
@@ -518,6 +519,11 @@
 		{
       "Name": "TK Tech News",
       "URL": "http://tktechnews.com/feed/",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "LA Times - Tech",
+      "URL": "http://www.latimes.com/business/technology/rss2.0.xml",
       "Type": "Tech, All"
     },
 		{

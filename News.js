@@ -157,7 +157,10 @@ function ShowMostRecent(nEntries, sType) {
             for (var j = 0; j < objSources.News[i].Entry.length; j++) {
                 if (aDates[k] === objSources.News[i].Entry[j].PubDate) {
                     if (-1 !== objSources.News[i].Type.search(sType)) {
-                        sText += "<a href='javascript:ShowMore(\"" + i + "_" + j + "\")' id='" + i + "^" + j + "'>+</a> <a href='" + objSources.News[i].Entry[j].Link + "' target='_blank' title='" + objSources.News[i].Entry[j].Snippet + "'>" + objSources.News[i].Entry[j].Title + '</a> (<a href="javascript:ShowSource(\'' + objSources.News[i].Name + '\')">' + objSources.News[i].Name + '</a>)<br>';
+											var sColor = (objSources.News[i].Color) ? objSources.News[i].Color : "#555555";
+                        sText += "<a href='javascript:ShowMore(\"" + i + "_" + j + "\")' id='" + i + "^" + j + "'>+</a> ";
+												sText += "<a href='" + objSources.News[i].Entry[j].Link + "' target='_blank' ";
+												sText += "style='color: " + sColor + ";' title='" + objSources.News[i].Entry[j].Snippet + "'>" + objSources.News[i].Entry[j].Title + '</a> (<a href="javascript:ShowSource(\'' + objSources.News[i].Name + '\')">' + objSources.News[i].Name + '</a>)<br>';
                         sText += "<span id='" + i + "_" + j + "' onclick='ShowMore(\"" + i + "_" + j + "\")' style='display: none; margin-left: 20px; margin-right: 20px;'> </span><br>";
                         nActualCount++;
                     }

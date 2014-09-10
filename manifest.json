@@ -1,7 +1,7 @@
 {
   "name": "Headlines",
   "short_name": "Headlines",
-  "description": "A fast way to keep up with a lot of news.",
+  "description": "A fast way to keep up with a lot of news",
   "version": "0.0.0.1",
   "manifest_version": 2,
   "icons": {
