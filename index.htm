@@ -5,8 +5,8 @@
     <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="/Chrome/Headlines/News.js"></script>
-	<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
-		<link rel='apple-touch-icon-precomposed' sizes='45x45' href='/Chrome/Headlines/Images/News45.png' />
+		<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
+		<link rel='apple-touch-icon-precomposed' sizes='45x45' href='/Chrome/Headlines/Images/NewsI32.png' />
 		<link rel='apple-touch-icon-precomposed' sizes='128x128' href='/Chrome/Headlines/Images/NewsI128.png' />
 		<link rel='icon' sizes='128x128' type='image/png' href='/Chrome/Headlines/Images/NewsI128.png' />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -29,7 +29,7 @@
                 <br>
                 <a href="javascript:ShowMostRecent(100, 'Top Headlines')">Top Headlines</a>
                 <br>
-                <a href="javascript:ShowMostRecent(100, 'Tech')">Tech</a>  <a href="javascript:ShowMostRecent(100, 'Android')">Android</a>  <a href="javascript:ShowMostRecent(100, 'Chrome')">Chrome</a>
+                <a href="javascript:ShowMostRecent(100, 'Tech')">Tech</a>  <a href="javascript:ShowMostRecent(100, 'Mobile')">Mobile</a>  <a href="javascript:ShowMostRecent(100, 'Chrome')">Chrome</a>
                 <br>
                 <a href="javascript:ShowMostRecent(100, 'Business')">Business</a> <a href="javascript:ShowMostRecent(100, 'Science')">Science</a>
                 <br>
@@ -37,13 +37,13 @@
                 <br>
                 <a href="javascript:ShowMostRecent(100, 'Sports')">Sports</a>  <a href="javascript:ShowMostRecent(100, 'NBA')">NBA</a>  <a href="javascript:ShowMostRecent(100, 'MLB')">MLB</a>
                 <br>
-                <a href="javascript:ShowMostRecent(100, 'Life')">Life</a> 
+                <a href="javascript:ShowMostRecent(100, 'Life')">Life</a>
 								<a href="javascript:ShowMostRecent(100, 'Entertainment')">Entertainment</a>
                 <br>
                 <span id='MostRecent'></span>
             </div>
             <!-- Sidebar Links -->
-            
+
             <div id='Settings' class='Card' style='display: none;'>
             	<section style='text-align: center;'><b>Settings</b></section>
             	Refresh every <select id='RefreshRate' onChange='RefreshRateChange()'>
@@ -56,11 +56,13 @@
             	</select> minutes<br>
             	<div id='CitySelector'></div>
 							<a href='http://woeid.rosselliot.co.nz/lookup' title='Other location' target='_blank'>WOEID</a>:  <input type='number' id='CityWOEID' onChange='CityWOEIDUpdate()' OnInput='CityWOEIDUpdate()' OnKeyUp='CityWOEIDUpdate()' onPaste='CityWOEIDUpdate()'/><br>
+							<input type='checkbox' id='BreakingNewsNotifications' onclick='ShowBreakingNews()' />Show breaking news notifications<br>
+							<div id='BreakingAudioCheckbox' style='display: none;'> <input type='checkbox' id='BreakingNewsAudio' onclick='SetBreakingNewsAudio()' />Breaking News Audio<br></div>
 							<span style='font-size: 80%;'>Art credits:  <a href='http://www.softicons.com/toolbar-icons/eziconic-icons-by-eray-zesen' target='_blank'>Newspaper</a>,
 							<a href='http://www.softicons.com/system-icons/hadaikum-icons-by-tiny-lab/settings-icon' target='_blank'>gear</a>,
 								<a href='http://www.softicons.com/web-icons/web-development-icons-2-by-icojoy/refresh-icon' target='_blank'>refresh</a></span>
             </div>  <!-- Sidebar Settings -->
-            
+
             <div id='SidebarWeather' class='Card' style='text-align: center; display: none;'>
             </div>
             <!-- Sidebar Weather -->

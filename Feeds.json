@@ -6,13 +6,18 @@
       "Type": "Weather, All"
     },
     {
+      "Name": "ABC News",
+      "URL": "http://feeds.abcnews.com/abcnews/topstories",
+      "Type": "Top Headlines, All"
+    },
+    {
       "Name": "AP Top Headlines",
       "URL": "http://hosted2.ap.org/atom/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305",
       "Type": "Top Headlines, All"
     },
-    {
-      "Name": "Top Stories",
-      "URL": "https://news.google.com/news/feeds?pz=1&cf=all&ned=us&hl=en&output=rss",
+		{
+      "Name": "BBC News",
+      "URL": "http://feeds.bbci.co.uk/news/rss.xml",
       "Type": "Top Headlines, All"
     },
     {
@@ -22,18 +27,8 @@
 			"Color": "red"
     },
     {
-      "Name": "UPI News",
-      "URL": "http://rss.upi.com/news/news.rss",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "Los Angeles Times",
-      "URL": "http://www.latimes.com/rss2.0.xml",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "New York Times",
-      "URL": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "Name": "CBS News",
+      "URL": "http://www.cbsnews.com/latest/rss/main",
       "Type": "Top Headlines, All"
     },
 		{
@@ -46,39 +41,25 @@
       "URL": "http://feeds.chicagotribune.com/chicagotribune/news/",
       "Type": "Top Headlines, All"
     },
-    {
-      "Name": "ABC News",
-      "URL": "http://feeds.abcnews.com/abcnews/topstories",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "CBS News",
-      "URL": "http://www.cbsnews.com/latest/rss/main",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "NBC News",
-      "URL": "http://feeds.nbcnews.com/feeds/topstories",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "MSNBC News",
-      "URL": "http://www.msnbc.com/feeds/latest",
-      "Type": "Top Headlines, All"
-    },
-    {
-      "Name": "USA Today",
-      "URL": "http://rssfeeds.usatoday.com/usatoday-NewsTopStories",
-      "Type": "Top Headlines, All"
-    },
 		{
       "Name": "CNN News",
       "URL": "http://rss.cnn.com/rss/cnn_latest.rss",
       "Type": "Top Headlines, All"
     },
 		{
-      "Name": "BBC News",
-      "URL": "http://feeds.bbci.co.uk/news/rss.xml",
+      "Name": "Daily News - Breaking",
+      "URL": "http://www.dailynews.com/section?template=RSS&profile=4000025&mime=xml",
+      "Type": "Top Headlines, All",
+			"Color": "red"
+    },
+		{
+      "Name": "Gawker",
+      "URL": "http://feeds.gawker.com/gawker/full",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "Global Post",
+      "URL": "http://www.globalpost.com/feed/dispatch/18797",
       "Type": "Top Headlines, All"
     },
 		{
@@ -87,13 +68,38 @@
       "Type": "Top Headlines, All"
     },
 		{
-      "Name": "World News",
-      "URL": "http://rss.wn.com/English/international-news",
+      "Name": "Helsinki Times",
+      "URL": "http://www.helsinkitimes.fi/?format=feed&type=rss",
       "Type": "Top Headlines, All"
     },
 		{
-      "Name": "Gawker",
-      "URL": "http://feeds.gawker.com/gawker/full",
+      "Name": "Iceland Review",
+      "URL": "http://icelandreview.com/rss.xml",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "The Independent",
+      "URL": "http://rss.feedsportal.com/c/266/f/3503/index.rss",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "The Local",
+      "URL": "http://www.thelocal.se/feeds/rss.php",
+      "Type": "Top Headlines, All"
+    },
+    {
+      "Name": "Los Angeles Times",
+      "URL": "http://www.latimes.com/rss2.0.xml",
+      "Type": "Top Headlines, All"
+    },
+    {
+      "Name": "MSNBC News",
+      "URL": "http://www.msnbc.com/feeds/latest",
+      "Type": "Top Headlines, All"
+    },
+    {
+      "Name": "New York Times",
+      "URL": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
       "Type": "Top Headlines, All"
     },
     {
@@ -102,29 +108,45 @@
       "Type": "Top Headlines, All"
     },
     {
-      "Name": "Significant Earthquakes",
-      "URL": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.atom",
+      "Name": "NBC News",
+      "URL": "http://feeds.nbcnews.com/feeds/topstories",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "Sweden News",
+      "URL": "http://www.swedennews.net/index.php/rss/2855359589592863",
       "Type": "Top Headlines, All"
     },
     {
-      "Name": "The Daily Beast",
-      "URL": "http://feeds.feedburner.com/thedailybeast/articles",
-      "Type": "News Magazines, All"
+      "Name": "Top Stories",
+      "URL": "https://news.google.com/news/feeds?pz=1&cf=all&ned=us&hl=en&output=rss",
+      "Type": "Top Headlines, All"
     },
     {
-      "Name": "Slate",
-      "URL": "http://feeds.slate.com/slate",
-      "Type": "News Magazines, All"
+      "Name": "UPI News",
+      "URL": "http://rss.upi.com/news/news.rss",
+      "Type": "Top Headlines, All"
     },
     {
-      "Name": "Salon",
-      "URL": "http://www.salon.com/feed/rss/",
-      "Type": "News Magazines, All"
+      "Name": "USA Today",
+      "URL": "http://rssfeeds.usatoday.com/usatoday-NewsTopStories",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "Weather.gov",
+      "URL": "http://www.weather.gov/rss_page.php?site_name=nws",
+      "Type": "Top Headlines, All"
+    },
+		{
+      "Name": "World News",
+      "URL": "http://rss.wn.com/English/international-news",
+      "Type": "Top Headlines, All"
     },
     {
-      "Name": "The New Yorker",
-      "URL": "http://www.newyorker.com/services/mrss/feeds/everything.xml",
-      "Type": "News Magazines, All"
+      "Name": "Significant Earthquakes",
+      "URL": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.atom",
+      "Type": "Top Headlines, All",
+			"Color": "red"
     },
     {
       "Name": "Big Think",
@@ -132,38 +154,18 @@
       "Type": "News Magazines, All"
     },
     {
-      "Name": "The Week",
-      "URL": "http://theweek.com/home.rss",
-      "Type": "News Magazines, All"
-    },
-    {
-      "Name": "US News & World Report",
-      "URL": "http://www.usnews.com/rss/news",
-      "Type": "News Magazines, All"
-    },
-    {
-      "Name": "Time",
-      "URL": "http://feeds2.feedburner.com/time/mostviewed",
+      "Name": "The Daily Beast",
+      "URL": "http://feeds.feedburner.com/thedailybeast/articles",
       "Type": "News Magazines, All"
     },
 		{
-      "Name": "VOX",
-      "URL": "http://www.vox.com/rss/index.xml",
+      "Name": "Five Thirty-Eight",
+      "URL": "http://fivethirtyeight.com/all/feed",
       "Type": "News Magazines, All"
     },
-    {
-      "Name": "Vanity Fair",
-      "URL": "http://www.vanityfair.com/feed/rss/everything.rss.xml",
-      "Type": "News Magazines, All"
-    },
-    {
-      "Name": "Life Hacker",
-      "URL": "http://feeds.gawker.com/lifehacker/full",
-      "Type": "News Magazines, All"
-    },
-    {
-      "Name": "TEDTalks",
-      "URL": "http://feeds.feedburner.com/TedtalksHD",
+		{
+      "Name": "Foreign Policy",
+      "URL": "http://www.foreignpolicy.com/rss",
       "Type": "News Magazines, All"
     },
     {
@@ -172,8 +174,8 @@
       "Type": "News Magazines, All"
     },
     {
-      "Name": "Politico",
-      "URL": "http://www.politico.com/rss/politicopicks.xml",
+      "Name": "Life Hacker",
+      "URL": "http://feeds.gawker.com/lifehacker/full",
       "Type": "News Magazines, All"
     },
     {
@@ -182,18 +184,78 @@
       "Type": "News Magazines, All"
     },
     {
+      "Name": "The New Yorker",
+      "URL": "http://www.newyorker.com/services/mrss/feeds/everything.xml",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "Politico",
+      "URL": "http://www.politico.com/rss/politicopicks.xml",
+      "Type": "News Magazines, All"
+    },
+		{
+      "Name": "Princeton Election Consortium",
+      "URL": "http://election.princeton.edu/feed/",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "Salon",
+      "URL": "http://www.salon.com/feed/rss/",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "Slate",
+      "URL": "http://feeds.slate.com/slate",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "TEDTalks",
+      "URL": "http://feeds.feedburner.com/TedtalksHD",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "Time",
+      "URL": "http://feeds2.feedburner.com/time/mostviewed",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "US News & World Report",
+      "URL": "http://www.usnews.com/rss/news",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "Vanity Fair",
+      "URL": "http://www.vanityfair.com/feed/rss/everything.rss.xml",
+      "Type": "News Magazines, All"
+    },
+		{
+      "Name": "VOX",
+      "URL": "http://www.vox.com/rss/index.xml",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "The Week",
+      "URL": "http://theweek.com/home.rss",
+      "Type": "News Magazines, All"
+    },
+    {
+      "Name": "The Atlantic - Business",
+      "URL": "http://feeds.feedburner.com/AtlanticBusinessChannel",
+      "Type": "Business, All"
+    },
+    {
       "Name": "Business Headlines",
       "URL": "http://hosted2.ap.org/atom/APDEFAULT/f70471f764144b2fab526d39972d37b3",
       "Type": "Business, All"
     },
     {
-      "Name": "Reuters Business",
-      "URL": "http://feeds.reuters.com/reuters/businessNews",
+      "Name": "Business Insider",
+      "URL": "http://feeds.feedburner.com/businessinsider",
       "Type": "Business, All"
     },
-    {
-      "Name": "MarketWatch",
-      "URL": "http://feeds.marketwatch.com/marketwatch/topstories/",
+		{
+      "Name": "Business of Fashion",
+      "URL": "http://www.businessoffashion.com/feed",
       "Type": "Business, All"
     },
     {
@@ -202,23 +264,8 @@
       "Type": "Business, All"
     },
     {
-      "Name": "CNN Money",
-      "URL": "http://rss.cnn.com/rss/money_latest.rss",
-      "Type": "Business, All"
-    },
-    {
-      "Name": "Business Insider",
-      "URL": "http://feeds.feedburner.com/businessinsider",
-      "Type": "Business, All"
-    },
-    {
-      "Name": "UPI Business",
-      "URL": "http://rss.upi.com/news/business_news.rss",
-      "Type": "Business, All"
-    },
-    {
-      "Name": "NBC News - Business",
-      "URL": "http://feeds.nbcnews.com/feeds/business",
+      "Name": "CFO",
+      "URL": "http://feeds.feedburner.com/cfo/daily_briefing",
       "Type": "Business, All"
     },
     {
@@ -227,18 +274,13 @@
       "Type": "Business, All"
     },
     {
-      "Name": "Los Angeles Times - Business",
-      "URL": "http://www.latimes.com/business/rss2.0.xml",
+      "Name": "CNN Money",
+      "URL": "http://rss.cnn.com/rss/money_latest.rss",
       "Type": "Business, All"
     },
-    {
-      "Name": "The Atlantic - Business",
-      "URL": "http://feeds.feedburner.com/AtlanticBusinessChannel",
-      "Type": "Business, All"
-    },
-    {
-      "Name": "Warren Buffett Watch",
-      "URL": "http://www.cnbc.com/id/19206666/device/rss/rss.html",
+		{
+      "Name": "Fast Company",
+      "URL": "http://feeds.feedburner.com/fastcompany/headlines",
       "Type": "Business, All"
     },
     {
@@ -247,8 +289,48 @@
       "Type": "Business, All"
     },
     {
+      "Name": "Los Angeles Times - Business",
+      "URL": "http://www.latimes.com/business/rss2.0.xml",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "Inc",
+      "URL": "http://feeds.inc.com/home/updates",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "MarketWatch",
+      "URL": "http://feeds.marketwatch.com/marketwatch/topstories/",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "NBC News - Business",
+      "URL": "http://feeds.nbcnews.com/feeds/business",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "Reuters Business",
+      "URL": "http://feeds.reuters.com/reuters/businessNews",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "Strategy+Business",
+      "URL": "http://feeds.feedburner.com/StrategyBusiness-AllUpdates",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "UPI Business",
+      "URL": "http://rss.upi.com/news/business_news.rss",
+      "Type": "Business, All"
+    },
+    {
       "Name": "USA Today - Money",
       "URL": "http://rssfeeds.usatoday.com/UsatodaycomMoney-TopStories",
+      "Type": "Business, All"
+    },
+    {
+      "Name": "Warren Buffett Watch",
+      "URL": "http://www.cnbc.com/id/19206666/device/rss/rss.html",
       "Type": "Business, All"
     },
 		{
@@ -257,13 +339,8 @@
       "Type": "Science, All"
     },
 		{
-      "Name": "Science Daily",
-      "URL": "http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology",
-      "Type": "Science, All"
-    },
-		{
-      "Name": "Proceedings of the National Academy of Sciences",
-      "URL": "http://feeds.feedburner.com/pnas/SMZM",
+      "Name": "How Stuff Works",
+      "URL": "http://feeds.howstuffworks.com/DailyStuff",
       "Type": "Science, All"
     },
 		{
@@ -272,13 +349,23 @@
       "Type": "Science, All"
     },
 		{
+      "Name": "New York Times - Science",
+      "URL": "http://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+      "Type": "Science, All"
+    },
+		{
+      "Name": "Proceedings of the National Academy of Sciences",
+      "URL": "http://feeds.feedburner.com/pnas/SMZM",
+      "Type": "Science, All"
+    },
+		{
       "Name": "Science Careers",
       "URL": "http://sciencecareers.sciencemag.org/career_magazine/rss.xml",
       "Type": "Science, All"
     },
 		{
-      "Name": "Science Stage",
-      "URL": "http://sciencestage.com/r/feeds/random/rss.xml",
+      "Name": "Science Daily",
+      "URL": "http://feeds.sciencedaily.com/sciencedaily/top_news/top_technology",
       "Type": "Science, All"
     },
 		{
@@ -287,63 +374,23 @@
       "Type": "Science, All"
     },
 		{
+      "Name": "Science Stage",
+      "URL": "http://sciencestage.com/r/feeds/random/rss.xml",
+      "Type": "Science, All"
+    },
+		{
       "Name": "Scientific American",
       "URL": "http://rss.sciam.com/ScientificAmerican-Global",
       "Type": "Science, All"
     },
-		{
-      "Name": "New York Times - Science",
-      "URL": "http://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
-      "Type": "Science, All"
-    },
-		{
-      "Name": "How Stuff Works",
-      "URL": "http://feeds.howstuffworks.com/DailyStuff",
-      "Type": "Science, All"
-    },
     {
-      "Name": "Technology Headlines",
-      "URL": "http://hosted2.ap.org/atom/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd",
+      "Name": "9 to 5 Google",
+      "URL": "http://9to5google.com/feed/",
       "Type": "Tech, All"
     },
     {
-      "Name": "Gigaom",
-      "URL": "http://gigaomnetwork.com/feed/",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "The Verge",
-      "URL": "http://www.theverge.com/rss/frontpage",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "CNET News",
-      "URL": "http://www.cnet.com/rss/news/",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Hot Hardware",
-      "URL": "http://feeds.feedburner.com/HotHardware/news",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Engadget",
-      "URL": "http://www.engadget.com/rss.xml",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Gizmodo",
-      "URL": "http://feeds.gawker.com/gizmodo/full",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Wired",
-      "URL": "http://feeds.wired.com/wired/index",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "PC Mag",
-      "URL": "http://feeds2.feedburner.com/ziffdavis/pcmag/breakingnews",
+      "Name": "Anand Tech",
+      "URL": "http://www.anandtech.com/rss/",
       "Type": "Tech, All"
     },
     {
@@ -352,23 +399,8 @@
       "Type": "Tech, All"
     },
     {
-      "Name": "ExtremeTech",
-      "URL": "http://www.extremetech.com/feed",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "SlashGear",
-      "URL": "http://feeds.slashgear.com/slashgear",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Liliputing",
-      "URL": "http://feeds.feedburner.com/Liliputing",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Stuff",
-      "URL": "http://www.stuff.tv/rss",
+      "Name": "BBC Tech",
+      "URL": "http://feeds.bbci.co.uk/news/technology/rss.xml",
       "Type": "Tech, All"
     },
     {
@@ -377,13 +409,13 @@
       "Type": "Tech, All"
     },
     {
-      "Name": "Laptop Magazine",
-      "URL": "http://feeds.feedburner.com/laptopmag",
+      "Name": "CNET News",
+      "URL": "http://www.cnet.com/rss/news/",
       "Type": "Tech, All"
     },
     {
-      "Name": "Geek",
-      "URL": "http://www.geek.com/feed/",
+      "Name": "Computer Weekly",
+      "URL": "http://www.computerweekly.com/rss/All-Computer-Weekly-content.xml",
       "Type": "Tech, All"
     },
     {
@@ -392,23 +424,123 @@
       "Type": "Tech, All"
     },
     {
-      "Name": "PC World",
-      "URL": "http://www.pcworld.com/index.rss",
+      "Name": "Dart Blog",
+      "URL": "http://news.dartlang.org/feeds/posts/default",
       "Type": "Tech, All"
     },
     {
-      "Name": "TechNationNews",
-      "URL": "http://www.lukor.net/category/Technology/feed/",
+      "Name": "Digital Times",
+      "URL": "http://www.digitimes.com/rss/daily.xml",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Electronic Frontier Foundation",
+      "URL": "https://www.eff.org/rss/updates.xml",
       "Type": "Tech, All"
     },
     {
-      "Name": "Tech Radar",
-      "URL": "http://feeds.feedburner.com/techradar/us/all",
+      "Name": "Engadget",
+      "URL": "http://www.engadget.com/rss.xml",
       "Type": "Tech, All"
     },
     {
-      "Name": "Venture Beat",
-      "URL": "http://feeds.venturebeat.com/VentureBeat",
+      "Name": "ExtremeTech",
+      "URL": "http://www.extremetech.com/feed",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Freed Up Thoughts",
+      "URL": "http://freedupthoughts.com/feed",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Geek",
+      "URL": "http://www.geek.com/feed/",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Geek Wire",
+      "URL": "http://feeds.geekwire.com/geekwire",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Gigaom",
+      "URL": "http://gigaomnetwork.com/feed/",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Gizmodo",
+      "URL": "http://feeds.gawker.com/gizmodo/full",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Google App Status",
+      "URL": "http://www.google.com/appsstatus/rss/en",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Google Developers Blog",
+      "URL": "http://feeds.feedburner.com/GDBcode",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Google Fiber Blog",
+      "URL": "http://feeds.feedburner.com/blogspot/oObXp",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "The Guardian - Tech",
+      "URL": "http://feeds.theguardian.com/theguardian/technology/rss",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Hacker News",
+      "URL": "http://feeds.feedburner.com/hacker-news-feed?format=xml",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Hot Hardware",
+      "URL": "http://feeds.feedburner.com/HotHardware/news",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Inferse",
+      "URL": "http://www.inferse.com/feed/",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Information Week",
+      "URL": "http://www.informationweek.com/rss_simple.asp",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Laptop Magazine",
+      "URL": "http://feeds.feedburner.com/laptopmag",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "LA Times - Tech",
+      "URL": "http://www.latimes.com/business/technology/rss2.0.xml",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Liliputing",
+      "URL": "http://feeds.feedburner.com/Liliputing",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Mashable",
+      "URL": "http://feeds.mashable.com/Mashable",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "MIT Technology Review",
+      "URL": "http://www.technologyreview.com/stream/rss/",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Mobile Syrup",
+      "URL": "http://mobilesyrup.com/feed/",
       "Type": "Tech, All"
     },
     {
@@ -416,9 +548,39 @@
       "URL": "http://feeds2.feedburner.com/thenextweb",
       "Type": "Tech, All"
     },
+		{
+      "Name": "The Official Google Blog",
+      "URL": "http://feeds.feedburner.com/blogspot/MKuf",
+      "Type": "Tech, All"
+    },
     {
-      "Name": "Mobile Syrup",
-      "URL": "http://mobilesyrup.com/feed/",
+      "Name": "PC Advisor",
+      "URL": "http://rss.feedsportal.com/c/559/f/7174/index.rss",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "PC Mag",
+      "URL": "http://feeds2.feedburner.com/ziffdavis/pcmag/breakingnews",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "PC World",
+      "URL": "http://www.pcworld.com/index.rss",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Phone Dog",
+      "URL": "http://feeds.phonedog.com/phonedog_cellphoneblog",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Pocket Lint",
+      "URL": "http://cdn.pocket-lint.com/rss/all.xml",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Recode",
+      "URL": "http://recode.net/feed/",
       "Type": "Tech, All"
     },
     {
@@ -429,31 +591,26 @@
     {
       "Name": "SF Gate",
       "URL": "http://www.sfgate.com/rss/feed/Business-and-Technology-News-448.php",
-      "Type": "Tech, Business, All"
-    },
-    {
-      "Name": "ZDNet",
-      "URL": "http://www.zdnet.com/news/rss.xml",
       "Type": "Tech, All"
     },
     {
-      "Name": "Information Week",
-      "URL": "http://www.informationweek.com/rss_simple.asp",
+      "Name": "SlashGear",
+      "URL": "http://feeds.slashgear.com/slashgear",
       "Type": "Tech, All"
     },
     {
-      "Name": "Tech News World",
-      "URL": "http://www.technewsworld.com/perl/syndication/rssfull.pl",
+      "Name": "Stuff",
+      "URL": "http://www.stuff.tv/rss",
       "Type": "Tech, All"
     },
     {
-      "Name": "Trusted Reviews",
-      "URL": "http://www.trustedreviews.com/feeds/news",
+      "Name": "T3",
+      "URL": "http://feeds.feedburner.com/T3/news",
       "Type": "Tech, All"
     },
     {
-      "Name": "Recode",
-      "URL": "http://recode.net/feed/",
+      "Name": "Tech Nation News",
+      "URL": "http://www.lukor.net/category/Technology/feed/",
       "Type": "Tech, All"
     },
     {
@@ -462,38 +619,13 @@
       "Type": "Tech, All"
     },
     {
-      "Name": "MIT Technology Review",
-      "URL": "http://www.technologyreview.com/stream/rss/",
+      "Name": "Technology Headlines",
+      "URL": "http://hosted2.ap.org/atom/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd",
       "Type": "Tech, All"
     },
     {
-      "Name": "Ubergizmo",
-      "URL": "http://feeds.feedburner.com/ubergizmo",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Mashable",
-      "URL": "http://feeds.mashable.com/Mashable",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Valley Wag",
-      "URL": "http://feeds.gawker.com/valleywag/full",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "USA Today - Tech",
-      "URL": "http://rssfeeds.usatoday.com/usatoday-TechTopStories",
-      "Type": "Tech, All"
-    },
-    {
-      "Name": "Digital Times",
-      "URL": "http://www.digitimes.com/rss/daily.xml",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Pocket Lint",
-      "URL": "http://cdn.pocket-lint.com/rss/all.xml",
+      "Name": "Tech News World",
+      "URL": "http://www.technewsworld.com/perl/syndication/rssfull.pl",
       "Type": "Tech, All"
     },
 		{
@@ -502,8 +634,8 @@
       "Type": "Tech, All"
     },
     {
-      "Name": "9 to 5 Google",
-      "URL": "http://9to5google.com/feed/",
+      "Name": "Tech Radar",
+      "URL": "http://feeds.feedburner.com/techradar/us/all",
       "Type": "Tech, All"
     },
 		{
@@ -511,9 +643,9 @@
       "URL": "http://www.techrepublic.com/rssfeeds/articles/latest/",
       "Type": "Tech, All"
     },
-    {
-      "Name": "Anand Tech",
-      "URL": "http://www.anandtech.com/rss/",
+		{
+      "Name": "The World Beyond Windows",
+      "URL": "http://www.pcworld.com/blog/world-beyond-windows/index.rss",
       "Type": "Tech, All"
     },
 		{
@@ -521,74 +653,69 @@
       "URL": "http://tktechnews.com/feed/",
       "Type": "Tech, All"
     },
-		{
-      "Name": "LA Times - Tech",
-      "URL": "http://www.latimes.com/business/technology/rss2.0.xml",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Inferse",
-      "URL": "http://www.inferse.com/feed/",
+    {
+      "Name": "Trusted Reviews",
+      "URL": "http://www.trustedreviews.com/feeds/news",
       "Type": "Tech, All"
     },
     {
-      "Name": "BBC Tech",
-      "URL": "http://feeds.bbci.co.uk/news/technology/rss.xml",
+      "Name": "Ubergizmo",
+      "URL": "http://feeds.feedburner.com/ubergizmo",
       "Type": "Tech, All"
     },
     {
-      "Name": "Computer Weekly",
-      "URL": "http://www.computerweekly.com/rss/All-Computer-Weekly-content.xml",
+      "Name": "USA Today - Tech",
+      "URL": "http://rssfeeds.usatoday.com/usatoday-TechTopStories",
       "Type": "Tech, All"
     },
     {
-      "Name": "The Guardian - Tech",
-      "URL": "http://feeds.theguardian.com/theguardian/technology/rss",
+      "Name": "UX Magazine",
+      "URL": "http://feeds.uxmag.com/uxm",
       "Type": "Tech, All"
     },
     {
-      "Name": "T3",
-      "URL": "http://feeds.feedburner.com/T3/news",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Freed Up Thoughts",
-      "URL": "http://freedupthoughts.com/feed",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Hacker News",
-      "URL": "http://feeds.feedburner.com/hacker-news-feed?format=xml",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Electronic Frontier Foundation",
-      "URL": "https://www.eff.org/rss/updates.xml",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "Google Fiber Blog",
-      "URL": "http://feeds.feedburner.com/blogspot/oObXp",
-      "Type": "Tech, All"
-    },
-		{
-      "Name": "The Official Google Blog",
-      "URL": "http://feeds.feedburner.com/blogspot/MKuf",
+      "Name": "Valley Wag",
+      "URL": "http://feeds.gawker.com/valleywag/full",
       "Type": "Tech, All"
     },
     {
-      "Name": "Google Developers Blog",
-      "URL": "http://feeds.feedburner.com/GDBcode",
+      "Name": "Venture Beat",
+      "URL": "http://feeds.venturebeat.com/VentureBeat",
       "Type": "Tech, All"
     },
     {
-      "Name": "Dart Blog",
-      "URL": "http://news.dartlang.org/feeds/posts/default",
+      "Name": "The Verge",
+      "URL": "http://www.theverge.com/rss/frontpage",
       "Type": "Tech, All"
     },
 		{
-      "Name": "OMG! Chrome!",
-      "URL": "http://www.omgchrome.com/feed/",
+      "Name": "The Wirecutter",
+      "URL": "http://feeds.feedburner.com/TheWirecutter",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "Wired",
+      "URL": "http://feeds.wired.com/wired/index",
+      "Type": "Tech, All"
+    },
+    {
+      "Name": "ZDNet",
+      "URL": "http://www.zdnet.com/news/rss.xml",
+      "Type": "Tech, All"
+    },
+		{
+      "Name": "Asus Chromebook",
+      "URL": "http://feeds.feedburner.com/AsusChromebookNews",
+      "Type": "Chrome, All"
+    },
+    {
+      "Name": "Chrome Releases",
+      "URL": "http://feeds.feedburner.com/GoogleChromeReleases",
+      "Type": "Chrome, All"
+    },
+    {
+      "Name": "The Chrome Show",
+      "URL": "https://gigaom.com/tag/chrome-show/feed/",
       "Type": "Chrome, All"
     },
     {
@@ -602,13 +729,8 @@
       "Type": "Chrome, All"
     },
     {
-      "Name": "Pratical Chrome",
-      "URL": "http://www.practicalchrome.com/feeds/posts/default",
-      "Type": "Chrome, All"
-    },
-		{
-      "Name": "Asus Chromebook",
-      "URL": "http://feeds.feedburner.com/AsusChromebookNews",
+      "Name": "Chromium Blog",
+      "URL": "http://blog.chromium.org/feeds/posts/default",
       "Type": "Chrome, All"
     },
     {
@@ -616,84 +738,84 @@
       "URL": "http://feeds2.feedburner.com/blogspot/Egta",
       "Type": "Chrome, All"
     },
-    {
-      "Name": "The Chrome Show",
-      "URL": "https://gigaom.com/tag/chrome-show/feed/",
+		{
+      "Name": "OMG! Chrome!",
+      "URL": "http://www.omgchrome.com/feed/",
       "Type": "Chrome, All"
     },
     {
-      "Name": "Chrome Releases",
-      "URL": "http://feeds.feedburner.com/GoogleChromeReleases",
+      "Name": "Pratical Chrome",
+      "URL": "http://www.practicalchrome.com/feeds/posts/default",
       "Type": "Chrome, All"
-    },
-    {
-      "Name": "Chromium Blog",
-      "URL": "http://blog.chromium.org/feeds/posts/default",
-      "Type": "Chrome, All"
-    },
-    {
-      "Name": "Android Central",
-      "URL": "http://feeds.feedburner.com/androidcentral",
-      "Type": "Android, All"
-    },
-    {
-      "Name": "Android Headlines",
-      "URL": "http://www.androidheadlines.com/feed",
-      "Type": "Android, All"
-    },
-    {
-      "Name": "Android Police",
-      "URL": "http://feeds.feedburner.com/AndroidPolice",
-      "Type": "Android, All"
     },
     {
       "Name": "Android and Me",
       "URL": "http://feeds.feedburner.com/androidandme",
-      "Type": "Android, All"
+      "Type": "Mobile, All"
     },
     {
-      "Name": "Cult of Android",
-      "URL": "http://cultofandroid.com.feedsportal.com/c/33880/f/612195/index.rss",
-      "Type": "Android, All"
-    },
-    {
-      "Name": "Android Pit",
-      "URL": "http://www.androidpit.com/feed/main.xml",
-      "Type": "Android, All"
-    },
-    {
-      "Name": "Talk Android",
-      "URL": "http://feeds.feedburner.com/AndroidNewsGoogleAndroidForums",
-      "Type": "Android, All"
+      "Name": "Android Central",
+      "URL": "http://feeds.feedburner.com/androidcentral",
+      "Type": "Mobile, All"
     },
     {
       "Name": "Android Community",
       "URL": "http://feeds2.feedburner.com/AndroidCommunity",
-      "Type": "Android, All"
+      "Type": "Mobile, All"
     },
-		{
-      "Name": "The Green Bot",
-      "URL": "http://www.greenbot.com/index.rss",
-      "Type": "Android, All"
+    {
+      "Name": "Android Headlines",
+      "URL": "http://www.androidheadlines.com/feed",
+      "Type": "Mobile, All"
+    },
+    {
+      "Name": "Android in Canada",
+      "URL": "http://feeds.feedburner.com/androidincanada",
+      "Type": "Mobile, All"
+    },
+    {
+      "Name": "Android Pit",
+      "URL": "http://www.androidpit.com/feed/main.xml",
+      "Type": "Mobile, All"
+    },
+    {
+      "Name": "Android Police",
+      "URL": "http://feeds.feedburner.com/AndroidPolice",
+      "Type": "Mobile, All"
     },
     {
       "Name": "Computerworld Blogs - Posts by JR Raphael",
       "URL": "http://blogs.computerworld.com/user/177/feed",
-      "Type": "Android, All"
+      "Type": "Mobile, All"
     },
     {
-      "Name": "Sports Headlines",
-      "URL": "http://hosted2.ap.org/atom/APDEFAULT/347875155d53465d95cec892aeb06419",
-      "Type": "Sports, All"
+      "Name": "Cult of Android",
+      "URL": "http://cultofandroid.com.feedsportal.com/c/33880/f/612195/index.rss",
+      "Type": "Mobile, All"
+    },
+		{
+      "Name": "Droid Life",
+      "URL": "http://www.droid-life.com/rss",
+      "Type": "Mobile, All"
+    },
+		{
+      "Name": "Phandroid",
+      "URL": "http://feeds2.feedburner.com/AndroidPhoneFans",
+      "Type": "Mobile, All"
+    },
+		{
+      "Name": "The Green Bot",
+      "URL": "http://www.greenbot.com/index.rss",
+      "Type": "Mobile, All"
     },
     {
-      "Name": "Los Angeles Times - Sports",
-      "URL": "http://www.latimes.com/sports/rss2.0.xml",
-      "Type": "Sports, All"
+      "Name": "Talk Android",
+      "URL": "http://feeds.feedburner.com/AndroidNewsGoogleAndroidForums",
+      "Type": "Mobile, All"
     },
-    {
-      "Name": "Google News - Sports",
-      "URL": "https://news.google.com/news/feeds?pz=1&cf=all&ned=us&hl=en&topic=s&output=rss",
+		{
+      "Name": "Bleacher Report",
+      "URL": "http://bleacherreport.com/articles/feed",
       "Type": "Sports, All"
     },
     {
@@ -702,8 +824,18 @@
       "Type": "Sports, All"
     },
     {
-      "Name": "UPI Sports",
-      "URL": "http://rss.upi.com/news/sports_news.rss",
+      "Name": "Google News - Sports",
+      "URL": "https://news.google.com/news/feeds?pz=1&cf=all&ned=us&hl=en&topic=s&output=rss",
+      "Type": "Sports, All"
+    },
+    {
+      "Name": "Los Angeles Times - Sports",
+      "URL": "http://www.latimes.com/sports/rss2.0.xml",
+      "Type": "Sports, All"
+    },
+    {
+      "Name": "Sports Headlines",
+      "URL": "http://hosted2.ap.org/atom/APDEFAULT/347875155d53465d95cec892aeb06419",
       "Type": "Sports, All"
     },
     {
@@ -711,9 +843,9 @@
       "URL": "http://rss.cnn.com/rss/si_topstories.rss",
       "Type": "Sports, All"
     },
-		{
-      "Name": "Bleacher Report",
-      "URL": "http://bleacherreport.com/articles/feed",
+    {
+      "Name": "UPI Sports",
+      "URL": "http://rss.upi.com/news/sports_news.rss",
       "Type": "Sports, All"
     },
     {
@@ -722,13 +854,13 @@
       "Type": "Sports, NBA, All"
     },
     {
-      "Name": "Pro Basketball Talk",
-      "URL": "http://probasketballtalk.nbcsports.com/category/top-posts/feed/",
+      "Name": "Los Angeles Times - Lakers",
+      "URL": "http://www.latimes.com/sports/lakers/rss2.0.xml",
       "Type": "Sports, NBA, All"
     },
     {
-      "Name": "Los Angeles Times - Lakers",
-      "URL": "http://www.latimes.com/sports/lakers/rss2.0.xml",
+      "Name": "Pro Basketball Talk",
+      "URL": "http://probasketballtalk.nbcsports.com/category/top-posts/feed/",
       "Type": "Sports, NBA, All"
     },
     {
@@ -742,18 +874,23 @@
       "Type": "Sports, MLB, All"
     },
     {
-      "Name": "Health.com",
-      "URL": "http://www.health.com/health/rss",
+      "Name": "Ask Men",
+      "URL": "http://www.askmen.com/homepage.rss",
       "Type": "Life, All"
+    },
+		{
+      "Name": "Deadline",
+      "URL": "http://deadline.com/feed/",
+      "Type": "Entertainment, All"
+    },
+		{
+      "Name": "Details",
+      "URL": "http://www.details.com/services/rss/feeds/all.xml",
+      "Type": "Entertainment, All"
     },
     {
       "Name": "The Eating Academy",
       "URL": "http://feeds.feedburner.com/WarOnInsulin",
-      "Type": "Life, All"
-    },
-    {
-      "Name": "Healthy Women",
-      "URL": "http://feeds.feedburner.com/nwhrc_focuson",
       "Type": "Life, All"
     },
     {
@@ -762,8 +899,13 @@
       "Type": "Life, All"
     },
     {
-      "Name": "Ask Men",
-      "URL": "http://www.askmen.com/homepage.rss",
+      "Name": "Health.com",
+      "URL": "http://www.health.com/health/rss",
+      "Type": "Life, All"
+    },
+    {
+      "Name": "Healthy Women",
+      "URL": "http://feeds.feedburner.com/nwhrc_focuson",
       "Type": "Life, All"
     },
     {
@@ -772,13 +914,18 @@
       "Type": "Entertainment, All"
     },
     {
-      "Name": "Variety",
-      "URL": "http://feeds.feedburner.com/variety/news/frontpage",
+      "Name": "Jezebel",
+      "URL": "http://feeds.gawker.com/jezebel/full",
       "Type": "Entertainment, All"
     },
     {
-      "Name": "Jezebel",
-      "URL": "http://feeds.gawker.com/jezebel/full",
+      "Name": "Paper",
+      "URL": "http://www.papermag.com/rss.xml",
+      "Type": "Entertainment, All"
+    },
+    {
+      "Name": "Rolling Stone",
+      "URL": "http://www.rollingstone.com/siteServices/rss/allNews",
       "Type": "Entertainment, All"
     },
 		{
@@ -787,8 +934,8 @@
       "Type": "Entertainment, All"
     },
     {
-      "Name": "Rolling Stone",
-      "URL": "http://www.rollingstone.com/siteServices/rss/allNews",
+      "Name": "Variety",
+      "URL": "http://feeds.feedburner.com/variety/news/frontpage",
       "Type": "Entertainment, All"
     }
   ]

@@ -15,7 +15,7 @@ window.onload = function() {
 			LoadSettings();
 			ShowMostRecent.nCount = 10;
 			ShowMostRecent.sNowShowing = "Recent";
-			getFileFromServer("http://messystudio.com/Chrome/Headlines/Feeds.json", function(sTxtSrcs) {
+			getFileFromServer("http://messystudio.com/Chrome/Headlines/Feeds2.json", function(sTxtSrcs) {
     		if (sTxtSrcs === null) { // error
 				}
 				else {
@@ -123,6 +123,7 @@ function ShowSource(sName) {
                 sText += "<a href='javascript:ShowMore(\"" + i + "_" + j + "\")' id='" + i + "^" + j + "'>+</a> <a href='" + objSources.News[i].Entry[j].Link + "' target='_blank' title='" + objSources.News[i].Entry[j].Snippet + "'>" + objSources.News[i].Entry[j].Title + '</a><br>';
                 sText += "<span id='" + i + "_" + j + "' onclick='ShowMore(\"" + i + "_" + j + "\")' style='display: none; margin-left: 15px; margin-right: 15px;'><i>" + objSources.News[i].Entry[j].Snippet + "</i></span><br>";
             }
+						sText += "<br><a href='javascript:ShowMostRecent(10, ShowMostRecent.sType)'>Back to news (" + ShowMostRecent.sType + ")</a>";
             sText += "</div>";
             document.getElementById('NewsRow').innerHTML = sText;
         }
@@ -132,6 +133,7 @@ function ShowSource(sName) {
 function ShowMostRecent(nEntries, sType) {
 	ShowMostRecent.sNowShowing = "Recent";
   ShowMostRecent.sType = sType;
+	// nEntries = (10 === nEntries) ? 100 : 10;
   ShowMostRecent.nCount = nEntries;
 	var aDates = [];
   var nLastDate = 0;
@@ -146,6 +148,7 @@ function ShowMostRecent(nEntries, sType) {
       }
     }
   aDates.sort();
+	var aSortedDates = aDates;
   aDates.reverse();
   aDates = aDates.filter(function(elem, pos) {
     return aDates.indexOf(elem) == pos;
@@ -169,12 +172,13 @@ function ShowMostRecent(nEntries, sType) {
         }
     }
     var sCard = "<div class='Card'><a href='javascript:RefreshHeadlines()'><img src='/Chrome/Headlines/Images/RefreshI16.png' align='right'/></a>";
-    sCard += "<b>" + nActualCount + " <a href='javascript:ShowMostRecent(10, ShowMostRecent.sType)'>Most Recent</a> - <a href='javascript:AdvanceNewsSection()'>" + sType + "</a></b><br><br>";
+    sCard += "<b><a href='javascript:ShowMostRecent(10, ShowMostRecent.sType)'>" + nActualCount + "</a> <a href='javascript:ShowMostRecent(100, ShowMostRecent.sType)'>Most Recent</a> - <a href='javascript:AdvanceNewsSection()'>" + sType + "</a></b><br><br>";
     sCard += sText;
     sCard += "</div>";
     document.getElementById('NewsRow').innerHTML = sCard;
     document.getElementById('MostRecent').innerHTML = "<a href='javascript:ShowHeadlineCards(\""+sType+"\")'>"+sType+" by source</a>";
 	SaveSettings();
+	SearchForNewBreakingNews(aSortedDates);
 }
 
 function ShowHeadlineCards(sType) {
@@ -189,7 +193,7 @@ function ShowHeadlineCards(sType) {
                 sText += "<a href='javascript:ShowMore(\"" + i + "_" + j + "\")' id='" + i + "^" + j + "'>+</a> <a href='" + objSources.News[i].Entry[j].Link + "' target='_blank' title='" + objSources.News[i].Entry[j].Snippet + "'>" + objSources.News[i].Entry[j].Title + '</a><br>';
                 sText += "<span id='" + i + "_" + j + "' onclick='ShowMore(\"" + i + "_" + j + "\")' style='display: none; margin-left: 20px; margin-right: 20px;'><i>" + objSources.News[i].Entry[j].Snippet + "</i></span><br>";
             }
-            sText += "</div>";
+						sText += "</div>";
         }
         document.getElementById('NewsRow').innerHTML = sText;
     }
@@ -224,6 +228,67 @@ function GetImageLink(sContent) {
 	var nCloseQuotePos = sSrcContent.indexOf('"', nOpenQuotePos+1);
 	var sImgLink = sSrcContent.substr(nOpenQuotePos+1, nCloseQuotePos-nOpenQuotePos-1);
 	return sImgLink;
+}
+
+// Breaking News Notifications
+function ShowBreakingNews() {
+	if (document.getElementById('BreakingNewsNotifications').checked) {
+		SaveSettings.bShowBreakingNotif = true;
+		BreakingNewsNotificationNow ('Headlines', 'Breaking news will now appear here');
+		document.getElementById('BreakingAudioCheckbox').style.display = 'block';
+	}
+	else {
+		document.getElementById('BreakingAudioCheckbox').style.display = 'none';
+		document.getElementById('BreakingNewsAudio').checked = false;
+		SaveSettings.bShowBreakingNotif = false;
+	}
+	SaveSettings();
+}
+
+function SetBreakingNewsAudio () {
+	if (document.getElementById('BreakingNewsAudio').checked) {
+		SaveSettings.bBreakingAudio = true;
+		LoadSettings.Boop.play();
+	}
+	else
+		SaveSettings.bBreakingAudio = false;
+	SaveSettings();
+}
+
+function BreakingNewsNotificationNow (sTitle, sBody) {
+	if(! ('Notification' in window) ){
+		// alert('Web Notification is not supported');
+		return;
+	}
+	Notification.requestPermission(function(permission){
+		var notification = new Notification(sTitle, {body:sBody, icon:'/Chrome/Headlines/Images/NewsI96.png', dir:'auto'});
+		setTimeout(function(){
+		notification.close();
+		},9000);
+	});
+}
+
+function SearchForNewBreakingNews(aSortedDates) {
+	if (!SaveSettings.bShowBreakingNotif)
+		return;
+	if (!BreakingNewsNotificationNow.LastDate)
+		BreakingNewsNotificationNow.LastDate = 1;
+	for (var k = 0; k < aSortedDates.length; k++) {
+		for (var i = 0; i < objSources.News.length; i++) {
+			for (var j = 0; j < objSources.News[i].Entry.length; j++) {
+				if (aSortedDates[k] === objSources.News[i].Entry[j].PubDate) {
+					if ('red' === objSources.News[i].Color && objSources.News[i].Entry[j].PubDate > BreakingNewsNotificationNow.LastShown) {
+						BreakingNewsNotificationNow (objSources.News[i].Name, objSources.News[i].Entry[j].Snippet);
+						if (BreakingNewsNotificationNow.LastDate < objSources.News[i].Entry[j].PubDate)
+							BreakingNewsNotificationNow.LastDate = objSources.News[i].Entry[j].PubDate;
+						if (SaveSettings.bBreakingAudio)
+							LoadSettings.Boop.play();
+					}
+				}
+			}
+		}
+	}
+	BreakingNewsNotificationNow.LastShown = BreakingNewsNotificationNow.LastDate;
 }
 
 // Persistent Settings
@@ -275,7 +340,7 @@ function CityWOEIDUpdate() {
 }
 
 function AdvanceNewsSection() {
-	var aSections = Array("All", "Top Headlines", "Tech", "Android", "Chrome", "Business", "Science", "News Magazines", "Sports", "NBA", "MLB", "Life", "Entertainment");
+	var aSections = Array("All", "Top Headlines", "Tech", "Mobile", "Chrome", "Business", "Science", "News Magazines", "Sports", "NBA", "MLB", "Life", "Entertainment");
 	if (!AdvanceNewsSection.nSec)
 		AdvanceNewsSection.nSec = 1;
 	else if (AdvanceNewsSection.nSec === aSections.length)
@@ -290,6 +355,11 @@ function SaveSettings() {
 	objSettings.City = SaveSettings.City;
 	objSettings.NewsTypeShowing = SaveSettings.NewsTypeShowing;
 	objSettings.sType = ShowMostRecent.sType;
+	objSettings.ShowBreakingNotif = (SaveSettings.bShowBreakingNotif) ? 'true' : 'false';
+	objSettings.BreakingAudio = (SaveSettings.bBreakingAudio) ? 'true' : 'false';
+	objSettings.CBSNewsX = ClickCBSNews.x;
+	objSettings.screenX = window.screenX;
+	objSettings.outerHeight = window.outerHeight;
 	var sSettings = JSON.stringify(objSettings);
 	setCookie('Settings', sSettings, 900);
 }
@@ -302,17 +372,42 @@ function LoadSettings() {
 	  SaveSettings.City = objSettings.City;
 		SaveSettings.NewsTypeShowing = objSettings.NewsTypeShowing;
 		ShowMostRecent.sType = objSettings.sType;
+		SaveSettings.bShowBreakingNotif = ('true' === objSettings.ShowBreakingNotif) ? true : false;
+		SaveSettings.bBreakingAudio = ('true' === objSettings.BreakingAudio) ? true : false;
+		ClickCBSNews.x = objSettings.CBSNewsX;
+		SaveSettings.screenX = objSettings.screenX;
+		SaveSettings.outerHeight = objSettings.outerHeight;
+		ClickCBSNews.x = SaveSettings.screenX - 430;
+		if (ClickCBSNews.x < 0)
+			ClickCBSNews.x = SaveSettings.screenX + 340;
+		ClickBloomberg.x = SaveSettings.screenX - 660;
+		if (ClickBloomberg.x < 0)
+			ClickBloomberg.x = SaveSettings.screenX + 340;
 	}
 	else {
 		SaveSettings.RefreshRate = 10;
 		SaveSettings.City = '2363796';
 		SaveSettings.NewsTypeShowing = 'none';
 		ShowMostRecent.sType = 'All';
+		SaveSettings.bShowBreakingNotif = true;
+		SaveSettings.bBreakingAudio = true;
+		SaveSettings.screenX = screen.width - 320;
+		SaveSettings.outerHeight = screen.height - 50;
+		ClickCBSNews.x = 400;
+		ClickBloomberg.x = 400;
 	}
+	window.moveTo(SaveSettings.screenX, 0);
+	window.resizeTo(320, SaveSettings.outerHeight);
 	document.getElementById('RefreshRate').value = SaveSettings.RefreshRate;
 	document.getElementById('CityCode').value = SaveSettings.City;
 	document.getElementById('CityWOEID').value = SaveSettings.City;
 	document.getElementById('NewsTypes').style.display = SaveSettings.NewsTypeShowing;
+	document.getElementById('BreakingNewsNotifications').checked = SaveSettings.bShowBreakingNotif;
+	document.getElementById('BreakingNewsAudio').checked = SaveSettings.bBreakingAudio;
+	if (SaveSettings.bShowBreakingNotif)
+		document.getElementById('BreakingAudioCheckbox').style.display = 'block';
+	BreakingNewsNotificationNow.LastShown = 0;
+	LoadSettings.Boop = new Audio('http://messystudio.com/Chrome/Headlines/Audio/Boop.mp3');
 }
 
 function setCookie(c_name, value, exdays) {
@@ -345,13 +440,37 @@ function UpdateDateCard() {
 	else sBG = '#F6F0BA';
 	var sDisplay = "<div style='float: right; width: 32px;'><a href='javascript:ShowNewsTypes()'><img src='/Chrome/Headlines/Images/NewsI32.png' style=''/></a></div>";
 	sDisplay += "<div style='background-color: " + sBG + "; width: 100%; margin-top: 10px; border-radius: 5px;'>";
-	sDisplay += "<div style='font-size: 410%; float: left; margin-top: 11px; padding-right: 5px; color: #A1A1A1;'>" + d.getDate() + " </div>";
-	sDisplay += "<div style='margin-top: -10px; text-align: left;'><div style='font-size: 150%;'>" + sD + "</div><div style='font-size: 75%; margin-top: -7px;'> " + sM + " " + d.getFullYear()+ "</div>";
+	sDisplay += "<div style='font-size: 410%; float: left; margin-top: 11px; padding-right: 5px; color: #A1A1A1;' OnClick='ClickCBSNews()'>" + d.getDate() + " </div>";
+	sDisplay += "<div style='margin-top: -10px; text-align: left;'><div style='font-size: 150%;' OnClick='ClickBloomberg()'>" + sD + "</div><div style='font-size: 75%; margin-top: -7px;'> " + sM + " " + d.getFullYear()+ "</div>";
 	sDisplay += "<div id='TheTime' style='font-size: 75%; margin-top: -11px;'></div></div>";
 	sDisplay += "</div>";
 	document.getElementById('DateCard').innerHTML = sDisplay;
 	ShowTheTime();
 	// document.getElementById('DateCard').innerHTML = "<a href='javascript:ShowMostRecent(10, ShowMostRecent.sType)'>" + sD + ", " + sM + " " + d.getDate() + ", " + d.getFullYear() + "</a>";
+}
+
+function ClickCBSNews() {
+	if (!ClickCBSNews.bShowing) {
+		ClickCBSNews.CBSNews = window.open ('http://cbsn.cbsnews.com/compact/', 'CBS News', config='height=269, width=420, top=1, left=' + ClickCBSNews.x + ', toolbar=no, menubar=no, scrollbars=no, resizable=no, directories=no, status=no');
+		ClickCBSNews.bShowing = true;
+	}
+	else {
+		// ClickCBSNews.x = ClickCBSNews.CBSNews.screenX;
+		ClickCBSNews.CBSNews.close();
+		ClickCBSNews.bShowing = false;
+		SaveSettings();
+	}
+}
+
+function ClickBloomberg() {
+	if (!ClickBloomberg.bShowing) {
+		ClickBloomberg.Bloomberg = window.open ('http://www.bloomberg.com/tv/popout/us/3.812999999616295/', 'Bloomberg News', config='height=394, width=638, top=1, left=' + ClickBloomberg.x + ', toolbar=no, menubar=no, scrollbars=no, resizable=no, directories=no, status=no');
+		ClickBloomberg.bShowing = true;
+	}
+	else {
+		ClickBloomberg.Bloomberg.close();
+		ClickBloomberg.bShowing = false;
+	}
 }
 
 function ShowTheTime() {
@@ -379,8 +498,8 @@ function MonthNumToText(nNum) {
 }
 
 function NumToText(nNum, sHM) {
-  var aNumText = new Array ("Oh", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", 
-														"Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", 
+  var aNumText = new Array ("Oh", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
+														"Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",
 														"Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty", "Thirty", "Forty",
 													 "Fifty");
   if (nNum > 0 && nNum < 21 && sHM === 'H') return aNumText[nNum];
@@ -432,46 +551,5 @@ getFileFromServer("/home8/mulholl3/public_html/silentpholdings/Cities.js, functi
 
 // Not using
 /*
-function IsBrowserMobile() {
-	if( /Android|AppleWebKit|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
-		return false;
-	else
-		return true;
-}
 
-// Changes XML to JSON
-function xmlToJson(xml) {
-    // Create the return object
-    var obj = {};
-    if (xml.nodeType == 1) { // element
-        // do attributes 
-        if (xml.attributes.length > 0) {
-            obj["@attributes"] = {};
-            for (var j = 0; j < xml.attributes.length; j++) {
-                var attribute = xml.attributes.item(j);
-                obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
-            }
-        }
-    } else if (xml.nodeType == 3) { // text
-        obj = xml.nodeValue;
-    }
-    // do children
-    if (xml.hasChildNodes()) {
-        for (var i = 0; i < xml.childNodes.length; i++) {
-            var item = xml.childNodes.item(i);
-            var nodeName = item.nodeName;
-            if (typeof(obj[nodeName]) == "undefined") {
-                obj[nodeName] = xmlToJson(item);
-            } else {
-                if (typeof(obj[nodeName].push) == "undefined") {
-                    var old = obj[nodeName];
-                    obj[nodeName] = [];
-                    obj[nodeName].push(old);
-                }
-                obj[nodeName].push(xmlToJson(item));
-            }
-        }
-    }
-    return obj;
-}
 */

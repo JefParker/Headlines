@@ -5,8 +5,8 @@ body {
   background-color: #3A3A3A;     /* fallback/image non-cover color */
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 .Container {
@@ -35,7 +35,7 @@ min-height: 85vh;
  z-index: 100;
  min-width: 290px;
 }
-	
+
 .CardRow {
 	min-width: 290px;
 }
@@ -280,7 +280,7 @@ display: inline-block;
 
 .VerticalText {
   position: absolute;
-  top: -300px; 
+  top: -300px;
   left: 120px;
   width: 400px;
   height: 30px;
