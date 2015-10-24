@@ -5,8 +5,8 @@ body {
   background-color: #3A3A3A;     /* fallback/image non-cover color */
 }
 
-::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .Container {
@@ -35,14 +35,13 @@ min-height: 85vh;
  z-index: 100;
  min-width: 290px;
 }
-
+	
 .CardRow {
 	min-width: 290px;
 }
 
 .CopyHeadline {
 font-family: 'Libre Baskerville', 'Lato', Helvetica, Arial, sans-serif;
-font-weight: bold;
 color: #555555;
 font-size: 150%;
 line-height: 120%;
@@ -55,7 +54,6 @@ margin: 0 0 0 0;
 
 .CopyHeadline300 {
 font-family: 'Libre Baskerville', 'Lato', Helvetica, Arial, sans-serif;
-font-weight: bold;
 color: #555555;
 font-size: 140%;
 line-height: 120%;
@@ -68,7 +66,6 @@ margin: 0 0 0 0;
 
 .CopyHeadline900 {
 font-family: 'Libre Baskerville', 'Lato', Helvetica, Arial, sans-serif;
-font-weight: bold;
 color: #555555;
 font-size: 140%;
 line-height: 120%;
@@ -217,13 +214,13 @@ opacity:1.0;
      -o-transform-origin:top right;
         transform-origin:top right;
 }
-@keyframes fly-in-from-left{
+@-webkit-keyframes fly-in-from-left{
 from {
     transform:translateY(15rem) rotate(15deg);
     opacity:0;
   }
 }
-@keyframes fly-in-from-right{
+@-webkit-keyframes fly-in-from-right{
 from {
     transform:translateY(15rem) rotate(-15deg);
     opacity:0;
@@ -280,7 +277,7 @@ display: inline-block;
 
 .VerticalText {
   position: absolute;
-  top: -300px;
+  top: -300px; 
   left: 120px;
   width: 400px;
   height: 30px;
@@ -490,6 +487,3 @@ color: green;
     transform: rotate(360deg);
   }
 }
-
-
-
